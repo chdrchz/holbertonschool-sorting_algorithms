@@ -2,7 +2,7 @@
 /**
  * insertion_sort_list - sorts a doubly linked list in ascending order
  *
- * @list - list to be sorted
+ * @list: list to be sorted
  **/
 void insertion_sort_list(listint_t **list)
 {

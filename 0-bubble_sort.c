@@ -1,7 +1,7 @@
 #include "sort.h"
 /**
  * bubble_sort - sorts based on the bubble sort method
- * 
+ *
  * @array: array to be sorted
  * @size: size of the array
  **/
@@ -24,7 +24,12 @@ void bubble_sort(int *array, size_t size)
 		}
 	}
 }
-
+/**
+ * swap - swaps elements
+ * 
+ * @a: first element
+ * @b: second element
+ **/
 void swap(int *a, int *b)
 {
 	int temp = *a;

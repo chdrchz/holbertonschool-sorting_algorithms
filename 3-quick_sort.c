@@ -6,7 +6,6 @@ void quick_sort(int *array, size_t size)
 	{
 		quick_sort_recursive(array, 0, size - 1);
 	}
-	print_array(array, size);
 }
 void quick_sort_recursive(int *array, int low, int high)
 {
@@ -30,8 +29,10 @@ int partition(int *array, int low, int high)
 		{
 			i++;
 			swap(&array[i], &array[j]);
+			print_array(array, high - low + 1);
 		}
 	}
 	swap(&array[i + 1], &array[high]);
+	print_array(array, high - low + 1);
 	return i + 1;
 }

@@ -29,7 +29,6 @@ int partition(int *array, int low, int high)
 		{
 			i++;
 			swap(&array[i], &array[j]);
-			print_array(array, high - low + 1);
 		}
 	}
 	swap(&array[i + 1], &array[high]);
